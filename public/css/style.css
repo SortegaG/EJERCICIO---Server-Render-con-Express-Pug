@@ -2,10 +2,11 @@ body {
     width: 800px;
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
+    background-color: hsl(31, 52%, 81%);
 }
 
 .container {
-    width: 600px;
+    width: 800px;
     margin: 0 auto;
 }
 
@@ -24,23 +25,24 @@ fieldset {
     border-image-outset: initial;
     border-image-repeat: initial;
     min-width: -webkit-min-content;
-    padding: 30px;
+    padding: 150px;
 }
 
 .ghost-input,
 p {
     display: block;
-    font-weight: 300;
+    font-weight: 400;
+    text-align: center;
     width: 100%;
-    font-size: 25px;
+    font-size: 30px;
     border: 0px;
     outline: none;
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    color: #4b545f;
-    background: #fff;
+    color: #456081;
+    background: hwb(0 100% 0%);
     font-family: Open Sans, Verdana;
     padding: 10px 15px;
     margin: 30px 0px;
@@ -57,7 +59,7 @@ p {
 
 .ghost-button {
     background-color: transparent;
-    border: 2px solid #ddd;
+    border: 2px solid hsl(90, 12%, 20%);
     padding: 10px 30px;
     width: 100%;
     min-width: 350px;
@@ -83,9 +85,10 @@ p {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
+    background-color: hwb(180 60% 24%);
     font-family: 'Open Sans', sans-serif;
     transition: transform 0.2s ease;
+    margin-top: 180px;
 }
 
 .movie-card:hover {
@@ -97,6 +100,7 @@ p {
     height: auto;
     border-radius: 8px;
     margin-right: 20px;
+    margin-top: 60px;
 }
 
 .movie-details {
@@ -107,7 +111,7 @@ p {
 }
 
 .movie-title {
-    font-size: 20px;
+    font-size: 35px;
     font-weight: 600;
     margin: 0;
     color: #333333;
@@ -120,4 +124,18 @@ p {
     font-size: 14px;
     color: #666666;
     margin: 6px 0;
+}
+
+button {
+    background-color: hsl(204, 21%, 71%);
+    color: #1f1f1f;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #cfdde7;
 }
