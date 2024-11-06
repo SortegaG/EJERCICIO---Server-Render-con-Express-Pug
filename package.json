@@ -1,0 +1,25 @@
+{
+  "name": "ejercicio---server-render-con-express-pug",
+  "version": "1.0.0",
+  "description": "Libreria de peliculas de OMDB.api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SortegaG/EJERCICIO---Server-Render-con-Express-Pug.git"
+  },
+  "author": "Sergio Ortega",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SortegaG/EJERCICIO---Server-Render-con-Express-Pug/issues"
+  },
+  "homepage": "https://github.com/SortegaG/EJERCICIO---Server-Render-con-Express-Pug#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7",
+    "pug": "^3.0.3"
+  }
+}
