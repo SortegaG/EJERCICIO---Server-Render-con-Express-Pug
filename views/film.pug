@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title Film 
+    link(rel="stylesheet", type="text/css", href="/css/style.css")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:300", rel="stylesheet", type="text/css")
+  body
+  div.movie-card
+    img.poster(src=img, alt=Poster of ${title})
+    .movie-details
+      h2.movie-title Titulo: #{title}
+      p.movie-year Año: #{year}
+      p.movie-genre Género: #{genre}
+      p.movie-director Director: #{director}
+      p.movie-plot Descripción: #{description}

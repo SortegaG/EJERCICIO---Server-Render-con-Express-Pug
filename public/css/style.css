@@ -1,8 +1,3 @@
-/*
-  Styles from this codepen:
-  https://codepen.io/official_naveen/pen/rgknI
-*/
-
 body {
     width: 800px;
     margin: 0 auto;
@@ -79,4 +74,50 @@ p {
 
 p {
     color: #E64A19;
+}
+
+.movie-card {
+    display: flex;
+    align-items: flex-start;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    transition: transform 0.2s ease;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.poster {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.movie-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+}
+
+.movie-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    color: #333333;
+}
+
+.movie-year,
+.movie-genre,
+.movie-director,
+.movie-plot {
+    font-size: 14px;
+    color: #666666;
+    margin: 6px 0;
 }

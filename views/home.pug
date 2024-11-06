@@ -1,10 +1,19 @@
 doctype html
 html
-    head
-        title Home
-    //-   link(rel="stylesheet", href="/css/style.css")   
-    body
-        h2 Bienvenidos a nuestra pagina HOME
-    //-   img(src="/assets/perro.gif", width="300")
+  head
+    meta(charset="utf-8")
+    title Test
+    link(rel="stylesheet", type="text/css", href="/css/style.css")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:300", rel="stylesheet", type="text/css")
+  body
+    .container
+      fieldset
+        form(action="/film", method="post")
+          input(name="film", type="text", class="ghost-input", placeholder="Título de la Película", required)
+          input(type="submit", class="ghost-button", value="Get Film")
 
-    //-   include ./footer.pug
+        //- if weather !== null
+        //-   p= weather
+
+        //- if error !== null
+        //-   p= error
