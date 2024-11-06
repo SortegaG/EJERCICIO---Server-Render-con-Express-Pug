@@ -30,26 +30,27 @@ const getfilms = async (req, res) => {
 
 const postfilms = async (req, res) => {
     const title = req.body.film;
-    console.log(title)
+    res.redirect(`/film/${title}`)
+    // console.log(title)
 
-    try {
-        const response = await fetch(`http://www.omdbapi.com/?t=${title}&apikey=${apiKey}`);
-        const data = await response.json();
-        console.log(data)
-        console.log(data.Poster)
+    // try {
+    //     const response = await fetch(`http://www.omdbapi.com/?t=${title}&apikey=${apiKey}`);
+    //     const data = await response.json();
+    //     console.log(data)
+    //     console.log(data.Poster)
 
-            res.status(200).render('film.pug', {
-                title: data.Title,
-                year: data.Year,
-                img: data.Poster,
-                director: data.Director,
-                genre: data.Genre,
-                description: data.Plot
-            })
+    //         res.status(200).render('film.pug', {
+    //             title: data.Title,
+    //             year: data.Year,
+    //             img: data.Poster,
+    //             director: data.Director,
+    //             genre: data.Genre,
+    //             description: data.Plot
+    //         })
             
-    } catch (error) {
-        console.error('Error loading films', error);
-    }
+    // } catch (error) {
+    //     console.error('Error loading films', error);
+    // }
 };
 
 
